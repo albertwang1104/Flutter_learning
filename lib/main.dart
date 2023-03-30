@@ -39,9 +39,9 @@ class TextData {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final String _title = "", _content = "";
-  final ButtonStyle style = ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 50),
-      fixedSize: const Size(300, 100),
+  String _title = "", _content = "";
+  ButtonStyle style = ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 26),
+      fixedSize: const Size(240, 60),
       padding: const EdgeInsets.fromLTRB(20, 10, 20, 10));
 
   @override
@@ -58,7 +58,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            // ListView(),
+            // Container(
+            //   padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+            //   child: ListView(),
+            // ),
             ElevatedButton(
               style: style,
               child: const Text('Create'),
