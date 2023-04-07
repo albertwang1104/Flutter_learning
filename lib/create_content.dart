@@ -3,11 +3,6 @@ import 'package:flutter/material.dart';
 TextEditingController titleController = TextEditingController();
 TextEditingController contentController = TextEditingController();
 
-class Article {
-  String title;
-  String content;
-  Article(this.content, this.title);
-}
 
 class CreatePage extends StatefulWidget {
   const CreatePage({Key? key}) : super(key: key);
