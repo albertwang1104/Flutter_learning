@@ -16,9 +16,7 @@ class _CreatePage extends State<CreatePage> {
       fixedSize: const Size(240, 60));
 
   Future<void> _btnSave(String title, String content, BuildContext context) async{
-    var dataMap = <String, String>{
-        'title':title,
-        'content':content};
+    var dataMap = <String, String>{'title':title, 'content':content};
 
     // todo: 將 dataMap 新增至資料庫
     Navigator.pop(context);
