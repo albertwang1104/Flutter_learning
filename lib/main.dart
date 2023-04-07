@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -34,12 +35,8 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class TextData {
-
-}
 
 class _MyHomePageState extends State<MyHomePage> {
-  String _title = "", _content = "";
   ButtonStyle style = ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 26),
       fixedSize: const Size(240, 60),
       padding: const EdgeInsets.fromLTRB(20, 10, 20, 10));
@@ -58,26 +55,20 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            // Container(
-            //   padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-            //   child: ListView(),
-            // ),
+            // Text();
+            Container(
+              padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+              child: const Text('Container 1'),
+            ),
             ElevatedButton(
               style: style,
               child: const Text('Create'),
               onPressed: () =>
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => CreatePage())),
+                      MaterialPageRoute(builder: (context) => const CreatePage())),
             )
           ],
         ),
-
-        // floatingActionButton: FloatingActionButton(
-        //   onPressed: _incrementCounter,
-        //   tooltip: 'Increment',
-        //   child: const Icon(Icons.add),
-        // ), // This trailing comma makes auto-formatting nicer for build methods.
-
       ),
     );
   }
