@@ -1,0 +1,4 @@
+#Wed Apr 19 15:35:03 CST 2023
+base.0=/Users/wangyuanheng/Documents/GitHub/Flutter_learning/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
